@@ -1,0 +1,52 @@
+#parent_container, #parent_container2{
+  position: relative;
+	height: 300px;
+	width: 400px;
+
+}
+#overlay, #overlay2, #upload_overlay{
+	border: 1px solid red;
+	height: 300px;
+	width: 400px;
+	position: absolute;
+  	top: 0;
+  	left: 0;
+  	text-align: center;
+
+}
+
+#selector{
+	width: 400px;
+}
+
+.image_overlay{
+	height: 300px;
+	
+	/*width: 400px;*/
+}
+#image_overlay2{
+	height: 300px;
+	width: 400px;
+	/*width: 400px;*/
+}
+.alert{
+	color: white;
+}
+
+#select_overlay{
+	overflow-x: auto;
+    white-space: nowrap;
+	 
+	 width: 400px;
+	 border: 1px solid red;
+}
+
+.overlay_image{
+	height: 100px;
+	border: 1px solid black;
+}
+
+.user_images{
+width: 200px;
+height: 150px;
+}

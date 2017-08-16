@@ -1,0 +1,9 @@
+.alert-mesage{
+	position: absolute;
+	text-align: center;
+	font-size: 1.9vw;
+	margin-top: 30%;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}

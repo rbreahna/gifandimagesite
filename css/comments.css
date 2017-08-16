@@ -1,0 +1,8 @@
+.comment_box{
+	border: 1px solid red;
+	margin: 3px;
+}
+
+.c_time{
+	float: right;
+}
