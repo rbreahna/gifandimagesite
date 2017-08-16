@@ -117,8 +117,6 @@ $host="localhost";
         $sql = "INSERT INTO images (user_id, link) Values ('4','./images/image20.jpg')";
         $dbh->exec($sql);
 
-
-
         $sql = "CREATE TABLE IF NOT EXISTS likes
         (image_id INT(20) UNSIGNED,
        	 user_id INT(20) UNSIGNED,
@@ -135,53 +133,12 @@ $host="localhost";
         $dbh->exec($sql);
         $sql = "INSERT INTO likes (image_id, user_id, liked) Values ('3','2','1')";
         $dbh->exec($sql);
-
-
-$sql = "CREATE TABLE IF NOT EXISTS ro_texts
-        (tag_id INT(20) UNSIGNED,
-         tag_text TEXT,
-         c_time DATETIME)";
-        $dbh->exec($sql);
-
-         $sql = "INSERT INTO ro_texts (tag_id, tag_text, c_time) Values ('1','numele meu este eugen',now())";
-        $dbh->exec($sql);
-        $sql = "INSERT INTO ro_texts (tag_id, tag_text, c_time) Values ('2','eu sunt un baiat bun', now())";
-        $dbh->exec($sql);
-         $sql = "INSERT INTO ro_texts (tag_id, tag_text, c_time) Values ('3','si foarte homosexual', now())";
-        $dbh->exec($sql);
-
-
-$sql = "CREATE TABLE IF NOT EXISTS en_texts
-        (tag_id INT(20) UNSIGNED,
-         tag_text TEXT,
-         c_time DATETIME)";
-        $dbh->exec($sql);
-
-         $sql = "INSERT INTO en_texts (tag_id, tag_text, c_time) Values ('1','hello my name is ceban',now())";
-        $dbh->exec($sql);
-        $sql = "INSERT INTO en_texts(tag_id, tag_text, c_time) Values ('2','this is a sample text', now())";
-        $dbh->exec($sql);
-         $sql = "INSERT INTO en_texts (tag_id, tag_text, c_time) Values ('3','ceban eugen is gay', now())";
-        $dbh->exec($sql);
-
-
-
-
          $sql = "CREATE TABLE IF NOT EXISTS comments
         (image_id INT(20) UNSIGNED,
        	 user_id INT(20) UNSIGNED,
          comment TEXT,
          c_time DATETIME(3))";
         $dbh->exec($sql);
-
-
-        // class testing, remove before deploy
-
-
-         
-
-      //  $t=date("Y-m-d H:i:s");
-       // now()
         $sql = "INSERT INTO comments (image_id, user_id, comment, c_time) Values ('1','2','comment from second user on first image', now())";
         $dbh->exec($sql);
         $sql = "INSERT INTO comments (image_id, user_id, comment, c_time) Values ('1','3','comment from third user on first image', now())";
