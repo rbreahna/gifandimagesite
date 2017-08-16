@@ -48,5 +48,6 @@ else
     <button class="login-button" type="submit" name="submit" value="OK">Log In</button>
   </div>
 </form>
+<a href="config/setup.php">SETUP</a>
 </body>
 </html>

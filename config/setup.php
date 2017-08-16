@@ -9,7 +9,7 @@
     <input type="submit" name="Create" value="Create All"/>
     <input type="submit" name="Delete" value="Delete All"/>
 </form>
-
+<a href="../login.php">LOGINPAGE</a>
 <?php
 include 'database.php';
 
