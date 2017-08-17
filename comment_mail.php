@@ -25,7 +25,7 @@ $to      = $author_email; // Send email to our user
 				$message = '
 				 
 				You have a new comment on your image.
-				 http://localhost/Camagru/image.php?id='.$image_id.'
+				 https://camagru/image.php?id='.$image_id.'
 				 
 				'; // Our message above including the link
 				                     
