@@ -48,6 +48,18 @@ switch ($selector) {
     case "image3":
         $top_path = './alpha/Curtain.png';
         break;
+    case "image4":
+        $top_path = './alpha/1.png';
+        break;
+    case "image5":
+        $top_path = './alpha/11.png';
+        break;
+    case "image6":
+        $top_path = './alpha/3.png';
+        break;
+    case "image7":
+        $top_path = './alpha/14.png';
+        break;
     default:
         $top_path = './alpha/insect.png';
 

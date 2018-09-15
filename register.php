@@ -105,7 +105,7 @@ Password: '.$password.'
 ------------------------
  
 Please click this link to activate your account:
-https://camagru/complete.php?email='.$email.'&hash='.$hash.'
+http://camagru.test/complete.php?email='.$email.'&hash='.$hash.'
  
 '; // Our message above including the link
                      

@@ -12,12 +12,16 @@ require 'config/database.php';
 <?php
 if (isset($_POST["login"]) && isset($_POST["password"]))
 {
+    //var_dump(hash('sha512', $_POST["password"]));
 $stmt = $db->prepare("SELECT * FROM users WHERE username = ? AND password = ? AND activated = ?");
 $stmt->bindValue(1, $_POST["login"]);
 $stmt->bindValue(2, hash('sha512', $_POST["password"]));
 $stmt->bindValue(3, '1');
 $stmt->execute();
+    //$row = $stmt->fetch(PDO::FETCH_ASSOC);
+    //var_dump($row);
 $count = $stmt->rowCount();
+
 if ($count ==1)
 {
 $_SESSION["login"] = $_POST["login"];
